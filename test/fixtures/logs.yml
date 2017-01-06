@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  food: MyString
+  calories: MyString
+  time: MyString
+
+two:
+  food: MyString
+  calories: MyString
+  time: MyString

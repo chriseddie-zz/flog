@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<center>
+  <%= image_tag("ico-logs.png", class: "logo") %>
+</center>
+
+<div class="container-fluid card">
+  <div class="row form">
+
+    <p>form</p>
+
+  </div>
+</div>
+
+<div class="container-fluid card">
+
+  <div class="row">
+    <div class="pull-left card-header">
+
+      <span class="header">Today</span><br>
+      <span class="sub-header">Thursday, Jan 5, 2017</span>
+
+    </div>
+
+    <div class="pull-right calorie-total">
+
+      <span class="cal-head">600</span><br>
+      <span class="cal-sub">calories</span>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <% @logs.each do |log| %>
+    <div class="row list-item">
+
+      <div class="pull-left">
+        <span class="item-name"><%= log.food %></span><br>
+        <span class="sub-header"><%= log.time %></span>
+      </div>
+
+      <div class="pull-right">
+        <span class="cal-head"><%= log.calories %></span>
+      </div>
+
+    </div>
+  <% end %>
+
+</div>
+
+<div class="container-fluid card">
+
+  <div class="row">
+    <div class="pull-left card-header">
+
+      <span class="header">Yesterday</span><br>
+      <span class="sub-header">Thursday, Jan 4, 2017</span>
+
+    </div>
+
+    <div class="pull-right calorie-total">
+
+      <span class="cal-head">600</span><br>
+      <span class="cal-sub">calories</span>
+
+    </div>
+
+  </div>
+</div>
+
+
+      <!-- <% @logs.each do |log| %>
+        <%= log.food %>
+        <%= log.calories %>
+        <%= log.time %>
+        <%= link_to 'Show', log %>
+        <%= link_to 'Edit', edit_log_path(log) %>
+        <%= link_to 'Destroy', log, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %> -->
+
+
+<center>
+<%= link_to 'New Log', new_log_path %>
