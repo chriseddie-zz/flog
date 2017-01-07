@@ -11,19 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :food %><br>
-    <%= f.text_field :food %>
+  <div class="text-area">
+    <%= f.text_area :food, placeholder: "I just ate..." %>
   </div>
-  <div class="field">
-    <%= f.label :calories %><br>
-    <%= f.text_field :calories %>
+  <div class="form-field">
+    <%= f.text_field :calories, placeholder: "Calories" %>
   </div>
-  <div class="field">
-    <%= f.label :time %><br>
-    <%= f.text_field :time %>
+  <div class="form-field last">
+    <%= f.text_field :time, placeholder: "Time" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="submit-btn">
+    <%= f.submit "Save", :class => 'flog-btn' %>
   </div>
 <% end %>
