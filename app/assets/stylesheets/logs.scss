@@ -15,6 +15,18 @@ a {
   color: #5cc18d;
 }
 
+input:focus {
+  outline: 0;
+}
+
+textarea:focus {
+  outline: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #ccc;
+}
+
 .row {
   margin: 0;
   padding: 0;
@@ -133,18 +145,6 @@ a {
 
 .btn-default {
   border: 0;
-}
-
-input:focus {
-  outline: 0;
-}
-
-textarea:focus {
-  outline: 0;
-}
-
-::-webkit-input-placeholder {
-    color: #ccc;
 }
 
 .text-area textarea {
