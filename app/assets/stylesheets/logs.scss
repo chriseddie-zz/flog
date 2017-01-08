@@ -6,6 +6,15 @@ hr {
   padding: 0;
 }
 
+a:hover {
+  text-decoration: none;
+  background-color: transparent !important;
+}
+
+a {
+  color: #5cc18d;
+}
+
 .row {
   margin: 0;
   padding: 0;
@@ -24,6 +33,10 @@ hr {
   border-bottom: solid 3px #d0e3d9;
   font-size: 26px;
   color: #666;
+}
+
+.card a:link, a:visited, a:active {
+  color: #666 !important;
 }
 
 .card-header {
@@ -87,17 +100,35 @@ hr {
 .submit-btn {
   position: absolute;
   top: 48px;
-  right: 20px;
-  font-size: 16px;
+  right: 30px;
+}
+
+.delete-link {
+  text-align: center;
+  font-size: 12px;
+}
+
+.back-btn {
+  position: absolute;
+  top: 48px;
+  left: 30px;
+  font-size: 20px;
   color: #5cc18d;
-  border-radius: 8px;
-  border: solid 2px #5cc18d;
   padding: 10px 16px 10px 16px;
+}
+
+.back-btn a {
+  color: #5cc18d !important;
 }
 
 .flog-btn {
   border: 0;
   background: 0;
+  font-size: 16px;
+  color: #5cc18d;
+  border-radius: 8px;
+  border: solid 2px #5cc18d;
+  padding: 10px 16px 10px 16px;
 }
 
 .btn-default {
@@ -149,4 +180,10 @@ textarea:focus {
 .last {
   border-bottom: 0;
   margin-bottom: -20px;
+}
+
+.notice {
+  position: absolute;
+  top: 60px;
+  left: 30px;
 }

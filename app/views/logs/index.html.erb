@@ -1,5 +1,4 @@
-<p id="notice"><%= notice %></p>
-
+<span id="notice" class="notice"><%= notice %></span>
 <center>
   <%= image_tag("ico-logs.png", class: "logo") %>
 </center>
@@ -37,7 +36,7 @@
     <div class="row list-item">
 
       <div class="pull-left">
-        <span class="item-name"><%= log.food %></span><br>
+        <span class="item-name"><%= link_to log.food, edit_log_path(log) %></span><br>
         <span class="sub-header"><%= log.time %></span>
       </div>
 
